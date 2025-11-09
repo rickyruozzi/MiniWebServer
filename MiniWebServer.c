@@ -10,7 +10,6 @@
 int main(){
     int server_fd, new_socket; //file descriptors dei socket
     struct sockaddr_in address; //server address structure
-    int opt = 1; //serve per impostare le opzioni del socket
     int addrLen = sizeof(address); //lunghezza dell'indirizzo
     char buffer[buffer_size]={0}; //buffer inizializzato a zero per leeggere la richiesta
     const char *response =  //risposta HTTP 
